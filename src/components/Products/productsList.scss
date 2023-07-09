@@ -1,0 +1,42 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.products-list {
+  width: 100%;
+  background-color: $grey-light;
+  @include flexRow(wrap, flex-start, space-evenly);
+
+  .product {
+    flex-basis: calc(25% - 20px);
+    margin: 2rem 0.5rem;
+    @include flexCol(center, space-evenly);
+
+    img {
+      padding: 3rem;
+      margin-bottom: 0.5rem;
+      min-height: 308px;
+      background-color: $white;
+      border-radius: 3rem;
+      -webkit-border-radius: 3rem;
+      -moz-border-radius: 3rem;
+      -ms-border-radius: 3rem;
+      -o-border-radius: 3rem;
+    }
+  }
+
+  h3 {
+    padding: 0 2rem;
+    text-align: center;
+  }
+
+  p {
+    font-size: 2em;
+    font-weight: 900;
+    @include sm {
+      font-size: 1.5em;
+    }
+    @include md {
+      font-size: 1.5em;
+    }
+  }
+}
