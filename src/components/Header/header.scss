@@ -1,0 +1,31 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.header-section {
+  background-color: $black-light;
+  margin: 2rem;
+  height: 60vh;
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+
+  @include flexRow(nowrap, center, center);
+
+  .header-title {
+    color: $white;
+    font-size: 4em;
+    text-align: center;
+    line-height: 1.1em;
+    width: 50%;
+
+    @include md {
+      font-size: 3em;
+    }
+    @include sm {
+      font-size: 2.3em;
+      width: 90%;
+    }
+  }
+}

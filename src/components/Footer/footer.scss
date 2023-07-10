@@ -1,0 +1,44 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.footer-section {
+  //   height: 20vh;
+  margin: 2rem;
+  padding: 2rem;
+
+  @include flexRow(wrap, flex-start, space-between);
+
+  .col-footer {
+    flex-basis: calc(25% - 20px);
+    margin: 2rem 0.5rem;
+
+    @include flexCol(flex-start, space-evenly);
+
+    h4 {
+      color: $white;
+      font-size: 1.5em;
+      margin-bottom: 1rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: rgb(102, 102, 102);
+      margin-bottom: 0.5rem;
+
+      &::after {
+        content: url("../../assets/icons/arrow.png");
+        position: relative;
+        left: -10px;
+        opacity: 0;
+        transition: left 0.3s ease, opacity 0.3s ease;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      &:hover::after {
+        left: 0;
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -1,8 +1,18 @@
-import { ProductsList } from "../../components/Products/ProductsList"
-
+import { Header } from "../../components/Header/Header";
+import { ProductsList } from "../../components/Products/ProductsList";
 
 export const Home = () => {
   return (
-    <ProductsList />
-  )
-}
+    <>
+      <Header
+        title={
+          <>
+            Descubre nuestra selección de{" "}
+            <span className="title-span">Móviles</span>
+          </>
+        }
+      />
+      <ProductsList />
+    </>
+  );
+};
