@@ -3,7 +3,7 @@
 
 .header-section {
   background-color: $black-light;
-  margin: 2rem;
+  margin: 1rem 2rem;
   height: 60vh;
   border-radius: 3rem;
   -webkit-border-radius: 3rem;
@@ -12,6 +12,9 @@
   -o-border-radius: 3rem;
 
   @include flexRow(nowrap, center, center);
+  @include sm {
+    margin: 1rem 1rem;
+  }
 
   .header-title {
     color: $white;

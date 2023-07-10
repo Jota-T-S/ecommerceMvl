@@ -1,0 +1,38 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.nav {
+  margin: 1rem 3rem 0 3rem;
+
+  @include flexRow(nowrap, center, space-between);
+  @include sm {
+    margin: 1rem 1rem;
+  }
+
+  .nav-logo img {
+    width: 5rem;
+  }
+
+  .nav-items {
+    padding: 0.7rem 3rem;
+    background-color: $black-light;
+    border-radius: 20rem;
+    -webkit-border-radius: 20rem;
+    -moz-border-radius: 20rem;
+    -ms-border-radius: 20rem;
+    -o-border-radius: 20rem;
+
+    @include sm {
+      padding: 0.5rem 1.5rem;
+    }
+
+    .icon-cart {
+      width: 1.2rem;
+    }
+
+    .icon-user {
+      width: 1.6rem;
+      margin-left: 2rem;
+    }
+  }
+}

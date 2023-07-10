@@ -14,3 +14,27 @@ body {
 .title-span {
   color: $green-lime;
 }
+
+.back-link {
+  text-align: center;
+
+  a {
+    color: $green-lime;
+    text-decoration: none;
+
+    &::before {
+      content: url("./assets/icons/arrow-green.png");
+      position: relative;
+      right: -10px;
+      opacity: 0;
+      transition: right 0.3s ease, opacity 0.3s ease;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    &:hover::before {
+      right: 0;
+      opacity: 1;
+    }
+  }
+}
