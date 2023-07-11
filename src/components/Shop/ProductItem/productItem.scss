@@ -1,0 +1,87 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
+
+.product-card {
+  flex-basis: calc(25% - 20px);
+  margin: 2rem 0.5rem;
+
+  @include flexCol(center, space-evenly);
+
+  a {
+    text-decoration: none;
+    color: $black-dark;
+  }
+
+  img {
+    padding: 3rem;
+    margin-bottom: 0.5rem;
+    min-height: 308px;
+    background-color: $white;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+
+    @include md {
+      width: 13em;
+      min-height: 208px;
+      border-radius: 2.5rem;
+      -webkit-border-radius: 2.5rem;
+      -moz-border-radius: 2.5rem;
+      -ms-border-radius: 2.5rem;
+      -o-border-radius: 2.5rem;
+    }
+    @include sm {
+      width: 13em;
+      min-height: 208px;
+      border-radius: 2.5rem;
+      -webkit-border-radius: 2.5rem;
+      -moz-border-radius: 2.5rem;
+      -ms-border-radius: 2.5rem;
+      -o-border-radius: 2.5rem;
+    }
+    @include xs {
+      padding: 2rem;
+      width: 10em;
+      min-height: 160px;
+      border-radius: 2rem;
+      -webkit-border-radius: 2rem;
+      -moz-border-radius: 2rem;
+      -ms-border-radius: 2rem;
+      -o-border-radius: 2rem;
+    }
+  }
+}
+
+h3 {
+  padding: 0 2rem;
+  text-align: center;
+  line-height: 1.1em;
+
+  @include md {
+    font-size: 1.2em;
+  }
+  @include sm {
+    font-size: 1.1em;
+  }
+  @include xs {
+    font-size: 1em;
+    padding: 0 0.4rem;
+  }
+}
+
+p {
+  font-size: 2em;
+  font-weight: 900;
+
+  @include md {
+    font-size: 1.3em;
+  }
+  @include sm {
+    font-size: 1.2em;
+  }
+  @include xs {
+    font-size: 1.1em;
+  }
+}

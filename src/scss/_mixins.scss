@@ -1,12 +1,18 @@
 // BREACKPOINTS
+@mixin xs {
+  @media (max-width: 447px) {
+    @content;
+  }
+}
+
 @mixin sm {
-  @media (max-width: 640px) {
+  @media (max-width: 672px) {
     @content;
   }
 }
 
 @mixin md {
-  @media (max-width: 768px) {
+  @media (max-width: 815px) {
     @content;
   }
 }

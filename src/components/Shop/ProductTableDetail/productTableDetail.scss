@@ -1,0 +1,78 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
+
+.table-detail {
+  background-color: $black-light;
+  margin: 1rem 2rem;
+  min-height: 60vh;
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+
+  @include flexCol(flex-start, center);
+
+  h3 {
+    color: $grey-light;
+    padding: 0 0 2rem 3rem;
+  }
+
+  @include sm {
+    margin: 1rem 1rem;
+    padding: 5rem 0;
+  }
+
+  table {
+    width: 70%;
+    margin: 0 auto;
+    color: #a7a7a7;
+    border: 1px solid #404040;
+
+    @include sm {
+      width: 90%;
+
+      tr {
+        display: block;
+        background-color: $black-dark;
+      }
+
+      td {
+        display: block;
+        text-align: right;
+        font-size: 13px;
+        background-color: black;
+        border: none;
+
+        &::before {
+          float: left;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+      }
+    }
+
+    th,
+    td {
+      padding: 0.2rem 1rem 0.2rem 2rem;
+      text-align: left;
+    }
+
+    th {
+      font-weight: 600;
+      border-right: 1px solid #404040;
+
+      @include sm {
+        border: none;
+      }
+    }
+
+    tr:nth-child(even) {
+      background-color: $black-dark;
+    }
+
+    tr:nth-child(odd) {
+      background-color: $grey-dark;
+    }
+  }
+}

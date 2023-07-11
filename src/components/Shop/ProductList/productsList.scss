@@ -1,0 +1,9 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
+
+.products-list {
+  width: 100%;
+  background-color: $grey-light;
+
+  @include flexRow(wrap, flex-start, space-evenly);
+}

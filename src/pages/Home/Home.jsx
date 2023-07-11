@@ -1,5 +1,5 @@
 import { Header } from "../../components/Header/Header";
-import { ProductsList } from "../../components/Products/ProductsList";
+import { ProductsList } from "../../components/Shop/ProductList/ProductsList";
 
 export const Home = () => {
   return (

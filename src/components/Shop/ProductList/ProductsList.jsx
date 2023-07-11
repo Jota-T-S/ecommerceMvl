@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { getAllProducts } from "../../API/productsApi";
+import { getAllProducts } from "../../../API/productsApi";
+import { ProductItem } from "../ProductItem/ProductItem";
 import "./productsList.scss";
 
 export const ProductsList = () => {
@@ -22,13 +23,7 @@ export const ProductsList = () => {
   return (
     <div className="products-list">
       {products.map((product) => (
-        <article className="product" key={product.id}>
-          <img src={product.imgUrl} alt={product.brand} />
-          <h3>
-            {product.brand} - <span>{product.model}</span>
-          </h3>
-          <p>{product.price}€</p>
-        </article>
+        <ProductItem key={product.id} product={product} />
       ))}
     </div>
   );
