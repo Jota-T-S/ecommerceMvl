@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { WidgetCount } from "../Shop/WidgetCount/WidgetCount";
 import logo from "../../assets/logo/logo.png";
 import iconCart from "../../assets/icons/cart.png";
 import iconUser from "../../assets/icons/user.png";
@@ -14,6 +15,7 @@ export const NavBar = () => {
         <NavLink className="item-cart" to="/cart">
           <img src={iconCart} className="icon-cart" alt="icon-cart" />
         </NavLink>
+        <WidgetCount />
         <NavLink className="item-user" to="/account">
           <img src={iconUser} className="icon-user" alt="icon-user" />
         </NavLink>

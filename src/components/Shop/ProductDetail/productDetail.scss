@@ -4,8 +4,7 @@
 .product-container {
   background-color: $grey-light;
   margin: 1rem 2rem;
-  padding: 2rem;
-  min-height: 90vh;
+  padding: 7rem 2rem;
   border-radius: 3rem;
   -webkit-border-radius: 3rem;
   -moz-border-radius: 3rem;
@@ -13,106 +12,125 @@
   -o-border-radius: 3rem;
 
   @include flexRow(nowrap, center, center);
+
+  @include mg {
+    padding: 4rem 2rem;
+  }
   @include md {
     padding: 5rem 2rem;
+    @include flexCol(center, center);
   }
   @include sm {
     margin: 1rem 1rem;
-    padding: 3rem 1rem;
+    padding: 3rem 1.5rem;
   }
 
-  .product-detail {
-    @include flexRow(nowrap, start, center);
-    @include md {
-      @include flexCol(center, center);
+  .img-product {
+    background-color: $white;
+    padding: 5rem;
+    border-radius: 3rem;
+
+    @include mg {
+      width: 100%;
+
+      @include flexRow(nowrap, center, center);
+    }
+    @include sm {
+      padding: 3rem;
     }
 
-    .img-product {
-      background-color: $white;
-      padding: 5rem;
-      border-radius: 3rem;
+    img {
+      width: 18rem;
 
-      @include md {
-        padding: 3rem;
-      }
-
-      img {
+      @include mg {
         width: 13rem;
-
-        @include md {
-          width: 10rem;
-        }
       }
     }
+  }
 
-    .product-card-info {
-      width: 50%;
-      padding: 1rem 2rem;
+  .product-card-info {
+    width: 40%;
+    padding: 1rem 2rem;
+    gap: 5rem;
 
-      @include md {
-        width: 100%;
-      }
-      @include sm {
-        padding: 1rem 1rem;
-      }
+    @include flexCol(initial, space-between);
+    @include lg {
+      width: 100%;
+    }
+    @include mg {
+      width: 100%;
+    }
+    @include sm {
+      padding: 2rem 0;
+      gap: 3rem;
+    }
 
-      .product-info {
-        h1 {
-          font-size: 2.5em;
-          margin-bottom: 0.5rem;
-          line-height: 1em;
+    .product-info {
+      h1 {
+        font-size: 2.5em;
+        margin-bottom: 0.5rem;
+        line-height: 1em;
 
-          @include sm {
-            font-size: 1.9em;
-          }
-        }
-
-        p {
-          font-size: 1.1em;
-          font-weight: 100;
-          margin-bottom: 1.5rem;
-
-          @include sm {
-            font-size: 1em;
-            margin-bottom: 1rem;
-          }
-        }
-
-        .price {
+        @include mg {
           font-size: 2em;
-          margin-bottom: 1.5rem;
-          font-weight: 600;
-          margin-bottom: 1.5rem;
         }
       }
-    }
 
-    .filters-select {
-      margin-top: 2rem;
+      p {
+        font-size: 1.1em;
+        font-weight: 100;
+        margin-bottom: 1.5rem;
 
-      @include flexRow(nowrap, center, flex-start);
-
-      .filter-select-color {
-        margin-right: 3rem;
+        @include lg {
+          font-size: 1em;
+        }
       }
 
-      label {
+      .price {
+        font-size: 4em;
+        margin-bottom: 1.5rem;
         font-weight: 600;
-        font-size: 1.1em;
-        margin-right: 0.5rem;
+        margin-bottom: 1.5rem;
+
+        @include lg {
+          font-size: 3em;
+        }
+        @include mg {
+          font-size: 2.5em;
+        }
       }
 
-      select {
-        border: none;
-        background-color: $grey-light;
-        font-size: 1.1em;
-        border-bottom: 1px solid $black-dark;
+      .selects {
+        margin-top: 2rem;
 
-        &:active,
-        &:focus,
-        &:focus-visible {
+        @include flexRow(nowrap, center, flex-start);
+
+        @include sm {
+          @include flexRow(nowrap, center, center);
+        }
+
+        .select-color {
+          margin-right: 3rem;
+        }
+
+        label {
+          font-weight: 600;
+          font-size: 1.1em;
+          margin-right: 0.5rem;
+        }
+
+        select {
+          border: none;
+          background-color: $grey-light;
+          font-size: 1.1em;
           border-bottom: 1px solid $black-dark;
-          outline: none;
+
+          &:active,
+          &:focus,
+          &:focus-visible {
+            border-bottom: 1px solid $black-dark;
+            outline: none;
+          }
         }
       }
     }
