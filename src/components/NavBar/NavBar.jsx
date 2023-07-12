@@ -12,13 +12,13 @@ export const NavBar = () => {
         <img src={logo} alt="logo" />
       </NavLink>
       <div className="nav-items">
+        <NavLink className="item-user" to="/account">
+          <img src={iconUser} className="icon-user" alt="icon-user" />
+        </NavLink>
         <NavLink className="item-cart" to="/cart">
           <img src={iconCart} className="icon-cart" alt="icon-cart" />
         </NavLink>
         <WidgetCount />
-        <NavLink className="item-user" to="/account">
-          <img src={iconUser} className="icon-user" alt="icon-user" />
-        </NavLink>
       </div>
     </nav>
   );

@@ -5,5 +5,9 @@ import "./widgetCount.scss";
 export const WidgetCount = () => {
   const { getTotalProduct } = useContext(CartContext);
 
-  return <span className="count-cart">{getTotalProduct() || "0"}</span>;
+  return (
+    <div className="count-cart">
+      <span className="count-number">{getTotalProduct() || "0"}</span>
+    </div>
+  );
 };

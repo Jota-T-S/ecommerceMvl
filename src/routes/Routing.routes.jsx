@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home } from "../pages/Home/Home";
-import { Footer } from "../components/Footer/Footer";
-import { NavBar } from "../components/NavBar/NavBar";
-import { Error } from "../pages/Error/Error";
+import { Home, Error } from "../pages";
+import { NavBar, Footer, ProductsList } from "../components";
+// import { ProductsList } from "../components/Shop/ProductList/ProductsList";
+// import { Error } from "../pages/Error/Error";
 import { ProductDetailContainer } from "../components/Shop/ProductDetailContainer/ProductDetailContainer";
 
 export const Routing = () => {

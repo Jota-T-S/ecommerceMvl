@@ -1,0 +1,23 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
+
+.input-search input[type="search"] {
+  width: 15rem;
+  padding: 1rem 2rem;
+  margin-bottom: 2.5rem;
+  background-color: #0f0f0f;
+  border: none;
+  outline: none;
+  color: $green-lime;
+  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+
+  &::-webkit-search-cancel-button {
+    filter: hue-rotate(-0.25turn);
+    -webkit-filter: hue-rotate(-0.25turn);
+    font-size: 1.2em;
+  }
+}

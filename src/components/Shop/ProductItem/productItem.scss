@@ -2,8 +2,8 @@
 @import "../../../scss/mixins";
 
 .product-card {
+  margin: 0 0.5rem;
   flex-basis: calc(25% - 20px);
-  margin: 2rem 0.5rem;
 
   @include flexCol(center, space-evenly);
 
@@ -40,15 +40,6 @@
       -moz-border-radius: 2.5rem;
       -ms-border-radius: 2.5rem;
       -o-border-radius: 2.5rem;
-
-      // padding: 2rem;
-      // width: 10em;
-      // min-height: 160px;
-      // border-radius: 2rem;
-      // -webkit-border-radius: 2rem;
-      // -moz-border-radius: 2rem;
-      // -ms-border-radius: 2rem;
-      // -o-border-radius: 2rem;
     }
     @include xs {
       padding: 2rem;
@@ -61,36 +52,55 @@
       -o-border-radius: 2rem;
     }
   }
-}
 
-h3 {
-  padding: 0 2rem;
-  text-align: center;
-  line-height: 1.1em;
+  h3 {
+    padding: 0 2rem;
+    text-align: center;
+    line-height: 1.1em;
+    max-width: 15rem;
 
-  @include md {
-    font-size: 1.2em;
+    @include md {
+      font-size: 1.2em;
+    }
+    @include sm {
+      font-size: 1.1em;
+    }
+    @include xs {
+      font-size: 1em;
+      padding: 0 0.4rem;
+    }
   }
-  @include sm {
-    font-size: 1.1em;
-  }
-  @include xs {
-    font-size: 1em;
-    padding: 0 0.4rem;
-  }
-}
 
-p {
-  font-size: 2em;
-  font-weight: 900;
+  .price-card {
+    font-size: 2em;
+    font-weight: 900;
+    text-align: center;
 
-  @include md {
-    font-size: 1.3em;
+    @include md {
+      font-size: 1.3em;
+    }
+    @include sm {
+      font-size: 1.2em;
+    }
+    @include xs {
+      font-size: 1.1em;
+    }
   }
-  @include sm {
-    font-size: 1.2em;
-  }
-  @include xs {
-    font-size: 1.1em;
+
+  .price-agotado {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(247, 107, 107);
+
+    @include md {
+      font-size: 1.3em;
+    }
+    @include sm {
+      font-size: 1.2em;
+    }
+    @include xs {
+      font-size: 1.1em;
+    }
   }
 }
