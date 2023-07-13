@@ -8,7 +8,7 @@
 
   .header-section {
     background-color: $black-light;
-    height: 50vw;
+    padding: 15rem 0;
     border-radius: 3rem;
     -webkit-border-radius: 3rem;
     -moz-border-radius: 3rem;
@@ -17,10 +17,10 @@
 
     @include flexRow(nowrap, center, center);
     @include md {
-      min-height: 50vh;
+      padding: 10rem 0;
     }
     @include sm {
-      min-height: 40vh;
+      padding: 7rem 0;
     }
 
     .header-title {
@@ -28,7 +28,7 @@
       font-size: 4em;
       text-align: center;
       line-height: 1.1em;
-      width: 50%;
+      width: 55%;
 
       @include md {
         font-size: 3em;

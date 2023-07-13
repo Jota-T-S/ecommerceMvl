@@ -2,7 +2,7 @@ import { useScrollScale } from "../../hooks/useScrollScale";
 import "./header.scss";
 
 export const Header = ({ title }) => {
-  const scale = useScrollScale(89, 95);
+  const scale = useScrollScale(80, 95);
 
   return (
     <div className="header-container">

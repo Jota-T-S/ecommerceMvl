@@ -18,22 +18,25 @@ Este proyecto se inició con la herramienta Vite.js
 
 ¿Por qué Vite.js?
 
-- Inicio Instantáneo del Server (Instant Server Start)
-  Nos brinda los archivos que necesitamos, atraves de módulos de javascript.
+#### Inicio Instantáneo del Server (Instant Server Start):
 
-- Rápido HMR
-  Sin importar el tamaño de la aplicación, podremos ver reflejados los cambios en nuestro codebase de manera instantanea.
+Nos brinda los archivos que necesitamos, atraves de módulos de javascript.
 
-- Build Optimizado
-  De manera interna ya trae pre-configurado Rollup con soporte a multiples paginas y soporte para librerías.
+#### Rápido HMR:
+
+Sin importar el tamaño de la aplicación, podremos ver reflejados los cambios en nuestro codebase de manera instantanea.
+
+#### Build Optimizado:
+
+De manera interna ya trae pre-configurado Rollup con soporte a multiples paginas y soporte para librerías.
 
 La aplicación se ejecutará de forma predeterminada en http://localhost:5174/
 
-#### Requisitos previos 📋
+### Requisitos previos 📋
 
 Para instalar y ejecutar este software, necesitará Node.js instalado en su ordenador.
 
-#### Instalación 🔧
+### Instalación 🔧
 
 Para instalar las dependencias necesarias, ejecute el siguiente comando:
 
@@ -45,7 +48,7 @@ Para desplegar este proyecto, deberá ejecutar el siguiente comando:
 
 - npm run start
 
-### Built With 🛠️
+### Construido con 🛠️
 
 Este proyecto fue construido con las siguientes herramientas:
 
@@ -54,6 +57,6 @@ Este proyecto fue construido con las siguientes herramientas:
 - Node.js
 - SASS
 
-### Authors ✒️
+### Autora ✒️
 
 - **Jose Torres** - [88jose](https://github.com/88jose)

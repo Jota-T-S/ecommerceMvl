@@ -10,17 +10,30 @@
   -moz-border-radius: 3rem;
   -ms-border-radius: 3rem;
   -o-border-radius: 3rem;
+  position: relative;
+  z-index: 999999;
+  margin-top: -5rem;
 
   @include flexCol(flex-start, center);
 
-  h3 {
-    color: $grey-light;
-    padding: 0 0 2rem 3rem;
+  @include mg {
+    margin: 1rem 0.5rem;
+    padding: 5rem 0;
+  }
+
+  @include md {
+    margin: 1rem 1rem;
+    padding: 5rem 0;
   }
 
   @include sm {
     margin: 1rem 1rem;
     padding: 5rem 0;
+  }
+
+  h3 {
+    color: $grey-light;
+    padding: 0 0 2rem 3rem;
   }
 
   table {

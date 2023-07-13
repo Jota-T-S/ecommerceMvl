@@ -11,6 +11,9 @@
   -moz-border-radius: 3rem;
   -ms-border-radius: 3rem;
   -o-border-radius: 3rem;
+  position: relative;
+  z-index: 99999;
+  margin-top: -5rem;
 
   @include flexCol(center, center);
   @include sm {

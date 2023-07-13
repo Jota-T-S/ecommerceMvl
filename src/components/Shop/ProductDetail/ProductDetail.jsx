@@ -9,7 +9,7 @@ import "./productDetail.scss";
 export const ProductDetail = ({ data }) => {
   const [goToCart, setGoToCart] = useState(false);
   const { addProduct } = useContext(CartContext);
-  const scale = useScrollScale(96, 100);
+  const scale = useScrollScale(100, 96);
 
   const onAdd = (quantity) => {
     setGoToCart(true);
