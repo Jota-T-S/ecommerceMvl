@@ -10,7 +10,7 @@ export const Footer = () => {
       </div>
       <div className="col-footer">
         <h4>Contacto</h4>
-        <NavLink to={"/"}>support@support.com</NavLink>
+        <NavLink to={"/"}>info@info.com</NavLink>
         <NavLink to={"/"}>+666 666 666</NavLink>
         <NavLink to={"/"}>NY 10461 - NEW YORK.</NavLink>
       </div>

@@ -1,136 +1,189 @@
 @import "../../../scss/variables";
 @import "../../../scss/mixins";
 
-.product-container {
-  background-color: $grey-light;
-  margin: 1rem 2rem;
-  padding: 7rem 2rem;
-  border-radius: 3rem;
-  -webkit-border-radius: 3rem;
-  -moz-border-radius: 3rem;
-  -ms-border-radius: 3rem;
-  -o-border-radius: 3rem;
+.header-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
 
-  @include flexRow(nowrap, center, center);
-
-  @include mg {
-    padding: 4rem 2rem;
-  }
-  @include md {
-    padding: 5rem 2rem;
-    @include flexCol(center, center);
-  }
-  @include sm {
-    margin: 1rem 1rem;
-    padding: 3rem 1.5rem;
-  }
-
-  .img-product {
-    background-color: $white;
-    padding: 5rem;
+  .product-container {
+    background-color: $grey-light;
+    margin: 1rem 2rem;
+    padding: 7rem 2rem;
     border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+
+    @include flexRow(nowrap, center, center);
 
     @include mg {
-      width: 100%;
-
-      @include flexRow(nowrap, center, center);
+      padding: 4rem 2rem;
+    }
+    @include md {
+      padding: 5rem 2rem;
+      @include flexCol(center, center);
     }
     @include sm {
-      padding: 3rem;
+      margin: 1rem 1rem;
+      padding: 3rem 1.5rem;
     }
 
-    img {
-      width: 18rem;
+    .img-product {
+      background-color: $white;
+      padding: 5rem;
+      border-radius: 3rem;
 
       @include mg {
-        width: 13rem;
+        width: 100%;
+
+        @include flexRow(nowrap, center, center);
       }
-    }
-  }
+      @include sm {
+        padding: 3rem;
+      }
 
-  .product-card-info {
-    width: 40%;
-    padding: 1rem 2rem;
-    gap: 5rem;
-
-    @include flexCol(initial, space-between);
-    @include lg {
-      width: 100%;
-    }
-    @include mg {
-      width: 100%;
-    }
-    @include sm {
-      padding: 2rem 0;
-      gap: 3rem;
-    }
-
-    .product-info {
-      h1 {
-        font-size: 2.5em;
-        margin-bottom: 0.5rem;
-        line-height: 1em;
+      img {
+        width: 18rem;
 
         @include mg {
-          font-size: 2em;
+          width: 13rem;
         }
       }
+    }
 
-      p {
-        font-size: 1.1em;
-        font-weight: 100;
-        margin-bottom: 1.5rem;
+    .product-card-info {
+      width: 40%;
+      padding: 1rem 2rem;
+      gap: 5rem;
 
-        @include lg {
-          font-size: 1em;
-        }
+      @include flexCol(initial, space-between);
+      @include lg {
+        width: 100%;
+      }
+      @include mg {
+        width: 100%;
+      }
+      @include sm {
+        padding: 2rem 0;
+        gap: 3rem;
       }
 
-      .price {
-        font-size: 4em;
-        margin-bottom: 1.5rem;
-        font-weight: 600;
-        margin-bottom: 1.5rem;
-
-        @include lg {
-          font-size: 3em;
-        }
-        @include mg {
+      .product-info {
+        h1 {
           font-size: 2.5em;
+          margin-bottom: 0.5rem;
+          line-height: 1em;
+
+          @include mg {
+            font-size: 2em;
+          }
+        }
+
+        p {
+          font-size: 1.1em;
+          font-weight: 100;
+          margin-bottom: 1.5rem;
+
+          @include lg {
+            font-size: 1em;
+          }
+        }
+
+        .price {
+          font-size: 4em;
+          margin-bottom: 1.5rem;
+          font-weight: 600;
+          margin-bottom: 1.5rem;
+
+          @include lg {
+            font-size: 3em;
+          }
+          @include mg {
+            font-size: 2.5em;
+          }
+        }
+
+        .selects {
+          margin-top: 2rem;
+
+          @include flexRow(nowrap, center, flex-start);
+
+          @include sm {
+            @include flexRow(nowrap, center, center);
+          }
+
+          .select-color {
+            margin-right: 3rem;
+          }
+
+          label {
+            font-weight: 600;
+            font-size: 1.1em;
+            margin-right: 0.5rem;
+          }
+
+          select {
+            border: none;
+            background-color: $grey-light;
+            font-size: 1.1em;
+            border-bottom: 1px solid $black-dark;
+
+            &:active,
+            &:focus,
+            &:focus-visible {
+              border-bottom: 1px solid $black-dark;
+              outline: none;
+            }
+          }
         }
       }
 
-      .selects {
-        margin-top: 2rem;
+      .link-finish {
+        @include flexCol(initial, space-between);
 
-        @include flexRow(nowrap, center, flex-start);
-
-        @include sm {
-          @include flexRow(nowrap, center, center);
-        }
-
-        .select-color {
-          margin-right: 3rem;
-        }
-
-        label {
-          font-weight: 600;
-          font-size: 1.1em;
-          margin-right: 0.5rem;
-        }
-
-        select {
-          border: none;
+        .finish {
+          text-align: center;
           background-color: $grey-light;
-          font-size: 1.1em;
-          border-bottom: 1px solid $black-dark;
+          border: 2px solid $black-light;
+          padding: 1rem 1rem;
+          margin-bottom: 1rem;
+          border-radius: 10rem;
+          -webkit-border-radius: 10rem;
+          -moz-border-radius: 10rem;
+          -ms-border-radius: 10rem;
+          -o-border-radius: 10rem;
 
-          &:active,
-          &:focus,
-          &:focus-visible {
-            border-bottom: 1px solid $black-dark;
-            outline: none;
+          &:hover {
+            cursor: pointer;
+            background-color: $green-lime;
+            border: 2px solid $green-lime;
           }
+        }
+        .continue {
+          text-align: center;
+          background-color: $grey-light;
+          border: 2px solid $black-light;
+          padding: 1rem 1rem;
+          border-radius: 10rem;
+          -webkit-border-radius: 10rem;
+          -moz-border-radius: 10rem;
+          -ms-border-radius: 10rem;
+          -o-border-radius: 10rem;
+
+          &:hover {
+            cursor: pointer;
+            background-color: $green-lime;
+            border: 2px solid $green-lime;
+          }
+        }
+        a {
+          text-decoration: none;
+          color: $black-dark;
+          font-size: 1.1em;
+          font-weight: 500;
+          line-height: 1em;
         }
       }
     }

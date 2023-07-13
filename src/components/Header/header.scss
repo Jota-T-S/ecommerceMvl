@@ -1,39 +1,42 @@
 @import "../../scss/variables";
 @import "../../scss/mixins";
 
-.header-section {
-  background-color: $black-light;
-  margin: 1rem 2rem;
-  min-height: 60vh;
-  border-radius: 3rem;
-  -webkit-border-radius: 3rem;
-  -moz-border-radius: 3rem;
-  -ms-border-radius: 3rem;
-  -o-border-radius: 3rem;
+.header-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
 
-  @include flexRow(nowrap, center, center);
-  @include md {
-    margin: 1rem 1rem;
-    min-height: 50vh;
-  }
-  @include sm {
-    margin: 1rem 1rem;
-    min-height: 40vh;
-  }
+  .header-section {
+    background-color: $black-light;
+    height: 50vw;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
 
-  .header-title {
-    color: $white;
-    font-size: 4em;
-    text-align: center;
-    line-height: 1.1em;
-    width: 50%;
-
+    @include flexRow(nowrap, center, center);
     @include md {
-      font-size: 3em;
+      min-height: 50vh;
     }
     @include sm {
-      font-size: 2.3em;
-      width: 90%;
+      min-height: 40vh;
+    }
+
+    .header-title {
+      color: $white;
+      font-size: 4em;
+      text-align: center;
+      line-height: 1.1em;
+      width: 50%;
+
+      @include md {
+        font-size: 3em;
+      }
+      @include sm {
+        font-size: 2.3em;
+        width: 90%;
+      }
     }
   }
 }

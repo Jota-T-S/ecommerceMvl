@@ -8,6 +8,8 @@ export * from "./Shop/ProductDetailContainer/ProductDetailContainer";
 export * from "./Shop/ProductItem/ProductItem";
 export * from "./Shop/ProductList/ProductsList";
 export * from "./Shop/ProductTableDetail/ProductTableDetail";
+export * from "./Shop/ProductsCart/ProductsCart";
+export * from "./Shop/ProductsCartContainer/ProductsCartContainer";
 export * from "./Shop/Search/Search";
 export * from "./Shop/WidgetCount/WidgetCount";
 export * from "./Tag/Tag";

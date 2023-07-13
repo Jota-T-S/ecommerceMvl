@@ -1,0 +1,55 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
+
+.section-listCart {
+  padding: 5rem;
+  background-color: $black-light;
+  margin: 1rem 2rem;
+  min-height: 60vh;
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+
+  @include flexCol(center, flex-start);
+  @include md {
+    margin: 1rem 1rem;
+    min-height: 50vh;
+    padding: 3rem 2rem;
+  }
+  @include sm {
+    margin: 1rem 1rem;
+    min-height: 40vh;
+    padding: 3rem 1rem;
+  }
+
+  .total {
+    width: 100%;
+    margin-top: 1rem;
+
+    @include flexRow(nowrap, center, flex-end);
+
+    .total-cart {
+      color: $green-lime;
+      font-size: 2em;
+
+      span {
+        color: $white;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
+
+.section-cart {
+  padding-top: 20rem;
+  margin-bottom: 10rem;
+
+  .text-info {
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 2rem;
+  }
+}

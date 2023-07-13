@@ -1,0 +1,84 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
+
+.section-productCart {
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 1px solid #404040;
+
+  @include flexRow(nowrap, center, center);
+
+  @include md {
+    @include flexCol(flex-start, center);
+  }
+
+  .img-cart {
+    padding: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    background-color: $white;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+
+    img {
+      width: 5rem;
+    }
+  }
+
+  .container-infoCart {
+    width: 100%;
+
+    @include flexRow(nowrap, flex-end, space-around);
+    @include md {
+      justify-content: space-between;
+    }
+
+    .info-cart {
+      width: 70%;
+
+      @include flexRow(nowrap, center, space-evenly);
+
+      @include md {
+        @include flexCol(flex-start, center);
+      }
+
+      .title-cart {
+        h3 {
+          color: $green-lime;
+          font-size: 2em;
+        }
+      }
+
+      p {
+        margin: 0;
+        color: #a7a7a7;
+
+        span {
+          color: $white;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+    .btn-deleteCart {
+      background-color: $black-light;
+      border: none;
+
+      span {
+        background-color: $green-lime;
+        color: $black-dark;
+        padding: 0 0.6rem;
+        font-size: 2em;
+        font-weight: 600;
+        border: none;
+        border-radius: 5rem;
+        -webkit-border-radius: 5rem;
+        -moz-border-radius: 5rem;
+        -ms-border-radius: 5rem;
+        -o-border-radius: 5rem;
+      }
+    }
+  }
+}

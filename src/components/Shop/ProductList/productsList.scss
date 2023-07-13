@@ -1,7 +1,7 @@
 @import "../../../scss/variables";
 @import "../../../scss/mixins";
 
-.products-list-container {
+.products-container {
   background-color: $grey-light;
   margin: 1rem 2rem;
   padding: 5rem 2rem;
@@ -12,58 +12,99 @@
   -ms-border-radius: 3rem;
   -o-border-radius: 3rem;
 
-  @include flexRow(nowrap, flex-start, center);
-  @include mg {
-    @include flexCol(flex-start, center);
-  }
-  @include md {
-    margin: 1rem 1rem;
-    min-height: 50vh;
-  }
+  @include flexCol(center, center);
   @include sm {
-    margin: 1rem 1rem;
-    min-height: 40vh;
-    padding: 4rem 0.5rem;
+    margin: 1rem 0.5rem;
   }
 
-  .menu-filter {
-    @include mg {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      flex-direction: row-reverse;
-      margin-bottom: 3rem;
-      padding: 0 2rem;
-    }
-    @include sm {
-      padding: 0 1rem;
-      margin-bottom: 1rem;
-      justify-content: center;
-    }
-  }
-
-  .product-btn {
+  .title-section {
     @include flexCol(center, center);
 
-    .products-list {
-      gap: 3rem 0;
+    h2 {
+      font-size: 3em;
+      line-height: 1.1em;
+      font-weight: 500;
+      text-align: center;
+      max-width: 25rem;
 
-      @include flexRow(wrap, flex-start, space-evenly);
+      @include mg {
+        font-size: 2.3em;
+      }
+      @include sm {
+        font-size: 2em;
+      }
     }
-    .button-view-more {
-      margin-top: 5rem;
 
-      button {
-        padding: 0.5rem 2rem;
-        font-size: 1.2em;
-        border: 1px solid $black-dark;
-        border-radius: 5rem;
+    p {
+      line-height: 1.1em;
+      font-weight: 500;
+      text-align: center;
+      max-width: 25rem;
+      margin: 1rem 0 8rem 0;
 
-        &:hover {
-          background-color: $green-lime;
-          border: 1px solid $green-lime;
-          font-weight: 600;
-          cursor: pointer;
+      @include md {
+        margin: 1rem 0 5rem 0;
+      }
+      @include sm {
+        margin: 1rem 0 0rem 0;
+      }
+    }
+  }
+
+  .products-list-container {
+    @include flexRow(nowrap, flex-start, center);
+    @include mg {
+      @include flexCol(flex-start, center);
+    }
+    @include md {
+      margin: 1rem 1rem;
+      min-height: 50vh;
+    }
+    @include sm {
+      margin: 1rem 1rem;
+      min-height: 40vh;
+      padding: 4rem 0.5rem;
+    }
+
+    .menu-filter {
+      @include mg {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: row-reverse;
+        margin-bottom: 3rem;
+        padding: 0 2rem;
+      }
+      @include sm {
+        padding: 0 1rem;
+        margin-bottom: 1rem;
+        justify-content: center;
+      }
+    }
+
+    .product-btn {
+      @include flexCol(center, center);
+
+      .products-list {
+        gap: 3rem 0;
+
+        @include flexRow(wrap, flex-start, space-evenly);
+      }
+      .button-view-more {
+        margin-top: 5rem;
+
+        button {
+          padding: 0.5rem 2rem;
+          font-size: 1.2em;
+          border: 1px solid $black-dark;
+          border-radius: 5rem;
+
+          &:hover {
+            background-color: $green-lime;
+            border: 1px solid $green-lime;
+            font-weight: 600;
+            cursor: pointer;
+          }
         }
       }
     }

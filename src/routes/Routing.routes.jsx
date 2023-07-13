@@ -1,9 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home, Error } from "../pages";
-import { NavBar, Footer, ProductsList } from "../components";
-// import { ProductsList } from "../components/Shop/ProductList/ProductsList";
-// import { Error } from "../pages/Error/Error";
-import { ProductDetailContainer } from "../components/Shop/ProductDetailContainer/ProductDetailContainer";
+import { NavBar, Footer, ProductDetailContainer } from "../components";
+import { Home, Error, Cart } from "../pages";
 
 export const Routing = () => {
   return (
@@ -12,6 +9,7 @@ export const Routing = () => {
       <Routes>
         <Route index element={<Home />} />
         <Route path="/detail/:productId" element={<ProductDetailContainer />} />
+        <Route path="/cart" element={<Cart />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
