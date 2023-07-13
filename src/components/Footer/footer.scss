@@ -8,10 +8,12 @@
   @include flexRow(wrap, flex-start, space-between);
 
   .col-footer {
-    flex-basis: calc(25% - 20px);
     margin: 2rem 0.5rem;
 
     @include flexCol(flex-start, space-evenly);
+    @include sm {
+      margin: 1rem 0.5rem;
+    }
 
     h4 {
       color: $white;

@@ -23,6 +23,10 @@
   .title-section {
     @include flexCol(center, center);
 
+    @include xs {
+      margin-bottom: 2rem;
+    }
+
     h2 {
       font-size: 3em;
       line-height: 1.1em;
@@ -67,6 +71,10 @@
       margin: 1rem 1rem;
       min-height: 40vh;
       padding: 4rem 0.5rem;
+    }
+
+    @include xs {
+      padding: 0;
     }
 
     .menu-filter {

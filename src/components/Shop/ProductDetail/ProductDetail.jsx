@@ -7,8 +7,8 @@ import { useScrollScale } from "../../../hooks/useScrollScale";
 import "./productDetail.scss";
 
 export const ProductDetail = ({ data }) => {
-  const [goToCart, setGoToCart] = useState(false);
   const { addProduct } = useContext(CartContext);
+  const [goToCart, setGoToCart] = useState(false);
   const scale = useScrollScale(100, 96);
 
   const onAdd = (quantity) => {
