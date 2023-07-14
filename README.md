@@ -30,8 +30,6 @@ Sin importar el tamaño de la aplicación, podremos ver reflejados los cambios e
 
 De manera interna ya trae pre-configurado Rollup con soporte a multiples paginas y soporte para librerías.
 
-La aplicación se ejecutará de forma predeterminada en http://localhost:5174/
-
 ### Requisitos previos 📋
 
 Para instalar y ejecutar este software, necesitará Node.js instalado en su ordenador.
@@ -47,6 +45,8 @@ Para instalar las dependencias necesarias, ejecute el siguiente comando:
 Para desplegar este proyecto, deberá ejecutar el siguiente comando:
 
 - npm run start
+
+La aplicación se ejecutará de forma predeterminada en http://localhost:5174/
 
 ### Construido con 🛠️
 
