@@ -45,8 +45,7 @@ Para instalar las dependencias necesarias, ejecute el siguiente comando:
 Para desplegar este proyecto, deberá ejecutar el siguiente comando:
 
 - npm run start
-
-La aplicación se ejecutará de forma predeterminada en http://localhost:5174/
+  La aplicación se ejecutará de forma predeterminada en http://localhost:5174/
 
 ### Construido con 🛠️
 
